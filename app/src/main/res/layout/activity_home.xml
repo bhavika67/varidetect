@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen"
+    tools:context=".Activity.Home.HomeActivity">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:layout_above="@+id/bottomNavigation"/>
+
+
+    <LinearLayout
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:background="@drawable/bg_bottom_navigation">
+
+        <ImageView
+            android:id="@+id/homeMenu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_select_menu"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/_5sdp"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/home"/>
+        <ImageView
+            android:id="@+id/uploadMenu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/_5sdp"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/upload"/>
+        <ImageView
+            android:id="@+id/historyMenu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/_5sdp"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/history__1_"/>
+        <ImageView
+            android:id="@+id/settingMenu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/_5sdp"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/setting"/>
+        <ImageView
+            android:id="@+id/questionMenu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/_5sdp"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/question"/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

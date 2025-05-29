@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context=".Fragment.Setting.SettingFragment">
+
+   <RelativeLayout
+       android:id="@+id/layoutChange"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:padding="@dimen/_10sdp">
+
+           <TextView
+               android:id="@+id/toolbar"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/setting"
+               android:textColor="@color/black"
+               android:textSize="@dimen/_16ssp"
+               android:fontFamily="@font/roboto_bold"/>
+
+
+           <RelativeLayout
+               android:id="@+id/layoutDarkMode"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/_20sdp"
+               android:layout_below="@id/toolbar">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/dark_mode"
+                   android:textColor="@color/black"
+                   android:layout_centerVertical="true"
+                   android:textSize="@dimen/_14ssp"
+                   android:fontFamily="@font/roboto_regular"/>
+
+               <Switch
+                   android:id="@+id/switchMode"
+                   android:layout_width="@dimen/_40sdp"
+                   android:layout_height="@dimen/_30sdp"
+                   android:checked="false"
+                   android:thumbTint="@color/purple"
+                   android:trackTint="@color/light_purple"
+                   android:layout_alignParentEnd="true"/>
+
+
+           </RelativeLayout>
+
+           <View
+               android:id="@+id/viewLineDarkMode"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/_1sdp"
+               android:layout_marginTop="@dimen/_10sdp"
+               android:layout_below="@id/layoutDarkMode"
+               android:background="@color/gray"/>
+
+           <RelativeLayout
+               android:id="@+id/layoutPrivacy"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/_10sdp"
+               android:layout_below="@id/viewLineDarkMode">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/privacy_settings"
+                   android:layout_centerVertical="true"
+                   android:textColor="@color/black"
+                   android:textSize="@dimen/_14ssp"
+                   android:fontFamily="@font/roboto_regular"/>
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_arrow_forward_ios"
+                   android:layout_centerVertical="true"
+                   android:layout_alignParentEnd="true"
+                   app:tint="@color/black" />
+
+           </RelativeLayout>
+
+           <View
+               android:id="@+id/viewLinePrivacy"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/_1sdp"
+               android:layout_marginTop="@dimen/_10sdp"
+               android:layout_below="@id/layoutPrivacy"
+               android:background="@color/gray"/>
+
+           <RelativeLayout
+               android:id="@+id/layoutLanguage"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/_10sdp"
+               android:layout_below="@id/viewLinePrivacy">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/language"
+                   android:layout_centerVertical="true"
+                   android:textColor="@color/black"
+                   android:textSize="@dimen/_14ssp"
+                   android:fontFamily="@font/roboto_regular"/>
+
+
+               <TextView
+                   android:id="@+id/selectLanguage"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginRight="@dimen/_5sdp"
+                   android:text=""
+                   android:textSize="@dimen/_14ssp"
+                   android:textColor="@color/black"
+                   android:fontFamily="@font/roboto_regular"
+                   android:layout_toStartOf="@id/backArrow"/>
+
+               <ImageView
+                   android:id="@+id/backArrow"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_arrow_forward_ios"
+                   android:layout_centerVertical="true"
+                   android:layout_alignParentEnd="true"
+                   app:tint="@color/black" />
+
+           </RelativeLayout>
+
+
+
+       </RelativeLayout>
+
+   </RelativeLayout>
+
+</RelativeLayout>

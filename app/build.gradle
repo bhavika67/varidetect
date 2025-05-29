@@ -1,0 +1,61 @@
+plugins {
+    alias(libs.plugins.androidApplication)
+    alias(libs.plugins.googleService)
+}
+
+android {
+    namespace 'com.vari.varidetect'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.vari.varidetect"
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+
+
+    // other Libraries
+    implementation(libs.appcompat)
+    implementation(libs.material)
+    implementation(libs.constraintlayout)
+    implementation(libs.ssp)
+    implementation(libs.sdp)
+
+    // tensorFlow
+    implementation(libs.tensorflow)
+    implementation(libs.tensorflowSupport)
+    implementation(libs.tensorflowlite)
+
+    // pdf
+    implementation(libs.pdf)
+
+    // Firebase
+    implementation(libs.fireStore)
+    implementation(libs.fireAuth)
+    implementation(libs.fireCore)
+
+    // testing
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.ext.junit)
+    androidTestImplementation(libs.espresso.core)
+}

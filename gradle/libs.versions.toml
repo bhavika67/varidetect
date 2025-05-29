@@ -1,0 +1,44 @@
+[versions]
+agp = "8.9.1"
+gms = "4.4.2"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+constraintlayout = "2.2.1"
+sdp = "1.1.1"
+ssp = "1.1.1"
+boM = "33.13.0"
+analytics = "22.4.0"
+storage = "20.3.0"
+fireStore = "24.10.0"
+labeling = "17.0.7"
+
+
+
+
+
+[libraries]
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+ssp = {group = "com.intuit.sdp", name = "sdp-android", version.ref = "sdp"}
+sdp = {group = "com.intuit.ssp", name = "ssp-android", version.ref = "ssp"}
+tensorflow = {group ="org.tensorflow", name = "tensorflow-lite", version = "2.17.0" }
+tensorflowSupport = {group ="org.tensorflow", name = "tensorflow-lite-support", version = "0.5.0" }
+tensorflowlite = {group = "org.tensorflow",name = "tensorflow-lite-select-tf-ops", version = "2.13.0"}
+pdf = {group = "com.itextpdf", name = "itext7-core", version="7.1.14"}
+fireStore = {group = "com.google.firebase", name = "firebase-firestore", version="24.5.0"}
+fireAuth = {group = "com.google.firebase", name = "firebase-auth", version="21.0.5"}
+fireCore = {group = "com.google.firebase", name = "firebase-core", version="20.1.0"}
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+googleService = { id = "com.google.gms.google-services", version.ref = "gms"}
+
+
+
