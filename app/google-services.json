@@ -7,7 +7,7 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:465926036443:android:3d4a613ea047e91a1f25fe",
+        "mobilesdk_app_id": "************************",
         "android_client_info": {
           "package_name": "com.vari.varidetect"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAFAiaVRGhdKkWdyrc9RuG9f6O1aeFk-rM"
+          "current_key": "**********************"
         }
       ],
       "services": {
