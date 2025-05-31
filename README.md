@@ -27,7 +27,7 @@ Varidetect uses deep learning models trained on large datasets of real and fake 
 
 ## **Models & GitHub Repository**  
 The deep learning models used in Varidetect are available in my GitHub repository:  
-🔗 **[GitHub Repo Link]([https://github.com/bhavika67/deepfake_ml_model])**  
+🔗 **[GitHub Repo Link](https://github.com/bhavika67/deepfake_ml_model)**  
 
 ## **Future Enhancements**  
 - **Real-time Detection** – Live video/audio analysis.  
