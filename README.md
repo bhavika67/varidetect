@@ -57,7 +57,7 @@ This project demonstrates:
 All training notebooks, experiments, and TFLite conversion scripts are available here:
 
 👉 **Model Repository:**  
-`<[add your model repo link here](https://github.com/bhavika67/deepfake_ml_model)>`
+https://github.com/bhavika67/deepfake_ml_model
 
 This includes:
 - Image model training  
